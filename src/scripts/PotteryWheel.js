@@ -4,10 +4,10 @@ export const makePottery = (shape, weight, height) => {
   let potteryID = potteryIDCounter;
 
   const pottery = {
+    id: `${potteryID}`,
     shape: `${shape}`,
     weight: `${weight}`,
     height: `${height}`,
-    id: `${potteryID}`,
   };
 
   potteryIDCounter += 1;
