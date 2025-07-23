@@ -1,8 +1,6 @@
 let potteryForSale = [];
 
 export const toSellOrNotToSell = (pieceOfPottery) => {
-  // pieceOfPottery.price = ``;
-
   if (pieceOfPottery.weight >= 6 && pieceOfPottery.cracked === false) {
     pieceOfPottery.price = 40;
   }
@@ -12,6 +10,10 @@ export const toSellOrNotToSell = (pieceOfPottery) => {
   if (pieceOfPottery.cracked === false) {
     potteryForSale.push(pieceOfPottery);
   }
+  return pieceOfPottery;
+};
 
-  return pieceOfPottery
+export const potteryForSaleList = () => {
+  let potteryForSaleClone = structuredClone(potteryForSale);
+  return potteryForSaleClone;
 };

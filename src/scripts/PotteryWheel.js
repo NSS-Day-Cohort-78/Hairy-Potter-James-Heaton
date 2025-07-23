@@ -13,4 +13,3 @@ export const makePottery = (shape, weight, height) => {
   potteryIDCounter += 1;
   return pottery;
 };
-
