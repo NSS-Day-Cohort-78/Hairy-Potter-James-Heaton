@@ -7,6 +7,7 @@ import { potteryList } from "./PotteryList.js";
 const potteryListDOM = document.querySelector(".potteryList");
 
 // Make 5 pieces of pottery at the wheel
+
 let mug = makePottery("Mug", 4, 3);
 let saucer = makePottery("Saucer", 5, 1);
 let teaCup = makePottery("Tea Cup", 2, 2);
